@@ -1,0 +1,24 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class MenuController extends Controller {
+    public function indexAction(){
+    	echo "Menu";
+        $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
+    }
+
+    public function helloAction(){
+    	echo "Menu</br>";
+    	// $index = new \Admin\Controller\IndexController();
+    	$index = A('Index');		//使用A方法实例化控制器
+   		$index->indexAction();
+   		$model = new \Home\Controller\IndexController();
+   		$model->indexAction();
+   		$mmm = new \Admin\Model\MenuModel();
+   		$mmm->indexAction();
+    }
+
+    public function testAction(){
+    	echo "test";
+    }
+}

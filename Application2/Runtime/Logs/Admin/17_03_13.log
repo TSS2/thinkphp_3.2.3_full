@@ -1,0 +1,57 @@
+[ 2017-03-13T14:10:40+08:00 ] 127.0.0.1 /thinkphp_3.2.3_full/admin.php/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011683s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-03-13T14:10:48+08:00 ] 127.0.0.1 /thinkphp_3.2.3_full/admin.php/admin/index/index?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018399s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::create() should be compatible with that of Think\Model::create() D:\PHP\htdocs\thinkphp_3.2.3_full\Application2\Admin\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0328s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `think_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `think_user` (`user_name`) VALUES ('测试') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_user` WHERE `user_id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `think_user` SET `user_name`='陈佳佳',`user_sex`='0' WHERE `user_id` = 4 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.051497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.051576s ]
+
+[ 2017-03-13T14:10:51+08:00 ] 127.0.0.1 /thinkphp_3.2.3_full/admin.php/admin/index/index?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+NOTIC: [2048] Declaration of Admin\Model\UserModel::create() should be compatible with that of Think\Model::create() D:\PHP\htdocs\thinkphp_3.2.3_full\Application2\Admin\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `think_user` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `think_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `think_user` (`user_name`) VALUES ('测试') [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_user` WHERE `user_id` = 4 LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `think_user` SET `user_name`='陈佳佳',`user_sex`='0' WHERE `user_id` = 4 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
